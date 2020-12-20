@@ -1,0 +1,35 @@
+\\ = \
+\( = (
+"\n" = newline character
+^	Matches the beginning of input.
+$	Matches the end of input
+*	Matches the preceding character zero or more times. For example, "zo*" matches either z or zoo.
++	Matches the preceding character one or more times. For example, "zo+" matches zoo but not z.
+.	Matches any single character except a newline character.
+x |y	Matches either x or y
+[xyz]	A character set. Matches any one of the enclosed characters. For example, [abc] matches the a in plain.
+[^ xyz ] A negative character set. Matches any character not enclosed. For example, [^abc] matches the p in plain.
+[ a-z ] A range of characters. Matches any character in the specified range. For example, "[a-z]" matches any lowercase alphabetic character in the range a through z.
+[^ m-z ] 	A negative range characters. Matches any character not in the specified range. For example, [^m-z] matches any character not in the range m through z
+\b Matches a word boundary, that is, the position between a word and a space. For example, er\b matches the er in never but not the er in verb
+\B Matches a non-word boundary. ea*r\B matches the ear in never early.
+\d	Matches a digit character. Equivalent to [0-9].
+\D	Matches a non-digit character. Equivalent to [^0-9].
+\f	Matches a form-feed character.
+\n	Matches a newline character.
+\r	Matches a carriage return character.
+\s	Matches any white space including space, tab, form-feed, and so on. Equivalent to [ \f\n\r\t\v].
+\S	Matches any nonwhite space character. Equivalent to [^ \f\n\r\t\v].
+\t	Matches a tab character.
+\v	Matches a vertical tab character.
+\w	Matches any word character including underscore. Equivalent to [A-Za-z0 -9_]. Use it in the search field.
+\W	Matches any non-word character. Equivalent to [^A-Za-z0-9_].
+\$		Finds a $ character.
+\\$	This regex entered in the search field, means that you are trying to find a \ character at the end of the line.
+\l	Changes the case of the next character to the lower case. Use this type of regex in the replace field.
+\u	Changes the case of the next character to the upper case. Use this type of regex in the replace field.
+\L	Changes the case of all the subsequent characters up to \E to the lower case. Use this type of regex in the replace field.
+(?!)	This is a pattern for "negative lookahead". For example, A(?!B) means that PyCharm will search for A, but only if not followed by B.
+(?=)	This is a pattern for "positive lookahead". For example, A(?=B) means that PyCharm will search for A, but match if only followed by B.
+(?<=)	This is a pattern for "positive lookbehind". For example, (?<=B)A means that PyCharm will search for A, but only if there is B before it.
+(?<!)	This is a pattern for "negative lookbehind". For example, (?<!B)A means that PyCharm will search for A, but only if there is no B before it.
