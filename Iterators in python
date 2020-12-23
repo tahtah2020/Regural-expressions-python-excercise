@@ -1,0 +1,12 @@
+Iterator
+تعنى 
+object
+يحتوى على مجموعة من القيم يمكن عدها
+an object cotains countable number of values.
+================================
+Iterated فى اللغة العربية تعنى مكرر
+======================================
+امثله على ال 
+Iterables = Iterators conatianer.
+وتعنى الاوعيه التى يمكن ان تحتوى على مجموعة من القيم التى يمكن عدها او المكان الذى توضع فيه مجموعة  القيم التى يمكن عدها
+List- dictionary-tuple-set- string
