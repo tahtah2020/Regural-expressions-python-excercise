@@ -1,0 +1,13 @@
+# write a code to remove white spaces from the beginning and the end of a string
+# note that \s in Regex matches any white space including space, tab, form-feed, and so on. Equivalent to [ \f\n\r\t\v].
+# Note that \S in Regex Matches any nonwhite space character. Equivalent to [^ \f\n\r\t\v].
+#Note that strip() function also removes the white spaces from the beginnign and the end of a string.
+==============================================================================
+import re
+text = "     banana   "
+pattern = re.compile(r'\S+')
+match= pattern.search(text)
+print(match)
+===========================================
+
+
